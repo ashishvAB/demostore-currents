@@ -40,7 +40,7 @@ jobs:
 
       - name: Playwright Tests
         continue-on-error: false
-        working-directory: ./basic
+        working-directory: ./tests
         env:
           CURRENTS_PROJECT_ID: ${{ secrets.CURRENTS_PROJECT_ID }}
           CURRENTS_RECORD_KEY: ${{ secrets.CURRENTS_RECORD_KEY }}
