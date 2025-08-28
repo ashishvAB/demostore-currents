@@ -36,7 +36,7 @@ jobs:
       - name: Install dependencies
         run: |
           npm ci
-          npx playwright install chrome
+          npx playwright install --with-deps
 
       - name: Playwright Tests
         continue-on-error: false
