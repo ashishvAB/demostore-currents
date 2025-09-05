@@ -15,16 +15,7 @@ export default defineConfig({
   expect: {
     timeout: 5000,
   },
-  workers:1 ,
-  reporter: [currentsReporter()],
+  workers:3 ,
+  reporter: [currentsReporter()], 
   
-  projects: [
-    {
-      name: "Project A",
-      retries: 1,
-      use: {
-        ...devices["Desktop Chrome"],
-      },
-    },
-  ],
 });
